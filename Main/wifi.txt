@@ -1,0 +1,72 @@
+
+network={
+	ssid="dude"
+	identity="0"
+	psk="pu"
+}
+network={
+	ssid="dude"
+	identity="0"
+	psk="pu"
+}
+network={
+	ssid="ksns"
+	psk="nsndb"
+
+}
+network={
+	ssid="jo"
+	identity="bin"
+	psk="dude"
+}
+
+network={
+	ssid="Nothing"
+	identity="Nothing"
+	psk="Nothing"
+}
+
+network={
+	ssid="Nothing"
+	identity="Nothing"
+	psk="Nothing"
+}
+
+network={
+	ssid="Nothing"
+	identity="Nothing"
+	psk="false"
+}
+
+network={
+	ssid="aloo"
+	identity="big"
+	psk="dude"
+}
+
+network={
+	ssid="jo"
+	identity="bin"
+	psk="chose"
+}
+
+network={
+	ssid="ggok"
+	identity="hjj"
+	psk="njh"
+}
+
+network={
+	ssid="haha"
+	priority=3
+	identity="true"
+	psk="bbnnn"
+	id_str="haha"
+}
+
+network={
+	ssid="lolol"
+	priority=3
+	psk="jsjdhd"
+	id_str="lolol"
+}
