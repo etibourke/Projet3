@@ -3,32 +3,18 @@
 ###############################################################################
 
 from picamera import PiCamera
-import time
+from time import sleep
 from subprocess import call
-from datetime import datetime
 
-i=0
-dur = 5
+time = 5
 incidentNumber = 0
-videoFolder = "/home/pi/Desktop/Projet3/Main/videofiles/"
+videoFolder = "/home/pi/Desktop/Projet3/Camera/videoFiles/"
 RaspVidFormat = ".h264"
 MP4Format = ".mp4"
 fileNameInLocation = ""
 # Setup the camera
 camera = PiCamera()
 camera.resolution = (1920, 1080)
-camera.rotation = 180
-
-def getStatus():
-    f = open("toCamera.txt", "r")
-    status = f.readline()
-    f.close
-    status = status.replace('\n','')
-    return status
-
-def captureCompleted():
-    f = open("toCamera.txt", "w")
-    f.close
 
 # Fonction to create a video file name
 def createVideoFileName():
@@ -45,36 +31,33 @@ def h264ToMp4():
 # Fonction to capture a video
 def videoCapture():
     fileName = createVideoFileName()
-    #write incident
-    date = datetime.now()
-    f = open("gps.txt", "r")
-    gps = f.readline()
-    f.close
-    f = open("incidents.txt", "a")
-    f.write("New incident as been detected on : "  + str(date)+ "\nAt position " + str(gps))
-    f.write("\nThis incident as been saved to "  + videoFolder + " as " + fileName + RaspVidFormat + "\n\n")
-    f.close
     # Start recording
     fileNameInLocation = str(videoFolder + fileName + RaspVidFormat)
     print(fileNameInLocation)
     camera.start_recording(fileNameInLocation)
-    time.sleep(dur)
+    sleep(time)
     # Stop recording
     camera.stop_recording()
     # The camera is now closed
     print ("New incident no." + str(incidentNumber) + " as been saved to " + videoFolder + " as " + fileName + RaspVidFormat)
-    
     #h264ToMp4()
-f = open("incidents.txt", "w")
-f.close
-f = open("toCamera.txt", "w")
-f.close
-print("waiting for new incident")
-while i == 0 :
-    status = getStatus()
-    if status == 'Incident' :
-        incidentNumber += 1
-        videoCapture()
-        captureCompleted()
-        print("waiting for new incident")
 
+incidentNumber += 1
+videoCapture()
+incidentNumber += 1
+videoCapture()
+incidentNumber += 1
+videoCapture()
+incidentNumber += 1
+videoCapture()
+incidentNumber += 1
+videoCapture()
+
+
+
+
+# Start recording
+#camera.start_recording("/home/pi/Desktop/Projet3/Camera/incident_1.h264")
+#sleep(5)
+#camera.stop_recording()
+#print ("New incident no.1 as been saved to /home/pi/Desktop/Projet3/Camera as incident_1.h264")

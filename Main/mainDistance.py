@@ -1,3 +1,6 @@
+#This code is greatly inspired from this link :
+#https://www.raspberrypi.org/forums/viewtopic.php?t=77534
+###########################################################################
 
 import RPi.GPIO as GPIO
 import time

@@ -1,3 +1,8 @@
+#This code as been inspired from the one
+#on the following site :
+#https://ubidots.com/blog/setup-raspberry-wifi-ubidots-send-data/
+#######################################################################################
+
 import os
 import sys
 from bluetooth import *
