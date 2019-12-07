@@ -19,15 +19,24 @@ def getStatus():
     status = status.replace('\n','')
     return status
 
+def getStatusCamera():
+    f = open("toCamera.txt", "r")
+    status = f.readline()
+    f.close
+    status = status.replace('\n','')
+    return status
+
 def sendStatus():
     f = open("toPhone.txt", "a")
     f.write("Incident\n" + str(distance))
+    f.close
+    f = open("incidents.txt", "a")
+    f.write("A car as been detected at a distance of : " + str(distance) + " cm\n")
     f.close
     print("Incident\n" + str(distance))
     f = open("toCamera.txt", "a")
     f.write("Incident")
     f.close
-    time.sleep(5)
 
 def get_distance():
     if GPIO.input (ECHO):                                               
@@ -68,21 +77,23 @@ def DetectIncident():
                     distance = get_distance()
                 distanceDetected += distance
                 distanceDetected = distanceDetected/3
-                if distanceDetected <= 120:
+                if distanceDetected <= 100:
                     print ("Voiture detectee a une distance de ", distanceDetected, " : Capture de video en cours")
-                    return distance
+                    return distanceDetected
         return 0        
 #clear files before begining
 f = open("toPhone.txt", "w")
 f.close
 f = open("toCamera.txt", "w")
-f.close                
+f.close
 print("Waiting for signal to begin")
 while i == 0 :
     status = getStatus()
-    while status == 'startActivity' :
+    statusCam = getStatusCamera()
+    while status == 'startActivity' and statusCam == '' :
         distance = DetectIncident()
         if distance != 0 :
             sendStatus()
         status = getStatus()
+        statusCam = getStatusCamera()
         

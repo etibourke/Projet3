@@ -70,3 +70,107 @@ network={
 	psk="jsjdhd"
 	id_str="lolol"
 }
+
+network={
+	ssid="true"
+	priority=3
+	identity="Nothing"
+	psk="Nothing"
+	id_str="true"
+}
+
+network={
+	ssid="true"
+	priority=3
+	identity="Nothing"
+	psk="Nothing"
+	id_str="true"
+}
+
+network={
+	ssid="false"
+	priority=3
+	identity="false"
+	psk="false"
+	id_str="false"
+}
+
+network={
+	ssid="true"
+	priority=3
+	identity="Nothing"
+	psk="Nothing"
+	id_str="true"
+}
+
+network={
+	ssid="false"
+	priority=3
+	identity="false"
+	psk="false"
+	id_str="false"
+}
+
+network={
+	ssid="false"
+	priority=3
+	identity="false"
+	psk="false"
+	id_str="false"
+}
+
+network={
+	ssid="false"
+	priority=3
+	identity="false"
+	psk="false"
+	id_str="false"
+}
+
+network={
+	ssid="false"
+	priority=3
+	identity="false"
+	psk="false"
+	id_str="false"
+}
+
+network={
+	ssid="false"
+	priority=3
+	identity="false"
+	psk="false"
+	id_str="false"
+}
+
+network={
+	ssid="ahhah"
+	priority=3
+	identity="absb"
+	psk="bbsb"
+	id_str="ahhah"
+}
+
+network={
+	ssid="false"
+	priority=3
+	identity="false"
+	psk="false"
+	id_str="false"
+}
+
+network={
+	ssid="false"
+	priority=3
+	identity="false"
+	psk="false"
+	id_str="false"
+}
+
+network={
+	ssid="false"
+	priority=3
+	identity="false"
+	psk="false"
+	id_str="false"
+}

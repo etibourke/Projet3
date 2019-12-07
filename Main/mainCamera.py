@@ -1,17 +1,19 @@
 from picamera import PiCamera
 import time
 from subprocess import call
+from datetime import datetime
 
 i=0
-dur = 2
+dur = 5
 incidentNumber = 0
-videoFolder = "/home/pi/Desktop/Projet3/Camera/videoFiles/"
+videoFolder = "/home/pi/Desktop/Projet3/Main/videofiles/"
 RaspVidFormat = ".h264"
 MP4Format = ".mp4"
 fileNameInLocation = ""
 # Setup the camera
 camera = PiCamera()
 camera.resolution = (1920, 1080)
+camera.rotation = 180
 
 def getStatus():
     f = open("toCamera.txt", "r")
@@ -39,6 +41,15 @@ def h264ToMp4():
 # Fonction to capture a video
 def videoCapture():
     fileName = createVideoFileName()
+    #write incident
+    date = datetime.now()
+    f = open("gps.txt", "r")
+    gps = f.readline()
+    f.close
+    f = open("incidents.txt", "a")
+    f.write("New incident as been detected on : "  + str(date)+ "\nAt position " + str(gps))
+    f.write("\nThis incident as been saved to "  + videoFolder + " as " + fileName + RaspVidFormat + "\n\n")
+    f.close
     # Start recording
     fileNameInLocation = str(videoFolder + fileName + RaspVidFormat)
     print(fileNameInLocation)
@@ -48,8 +59,12 @@ def videoCapture():
     camera.stop_recording()
     # The camera is now closed
     print ("New incident no." + str(incidentNumber) + " as been saved to " + videoFolder + " as " + fileName + RaspVidFormat)
+    
     #h264ToMp4()
-
+f = open("incidents.txt", "w")
+f.close
+f = open("toCamera.txt", "w")
+f.close
 print("waiting for new incident")
 while i == 0 :
     status = getStatus()

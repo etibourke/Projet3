@@ -1,0 +1,130 @@
+A car as been detected at a distance of : 94.6265829485 cm
+New incident as been detected on : 2019-12-03 11:26:06.583618
+At position 
+This incident as been saved to /home/pi/Desktop/Projet3/Main/videofiles/ as incident_1.h264
+
+A car as been detected at a distance of : 53.9378257795 cm
+New incident as been detected on : 2019-12-03 11:27:46.826244
+At position 
+This incident as been saved to /home/pi/Desktop/Projet3/Main/videofiles/ as incident_2.h264
+
+A car as been detected at a distance of : 36.3056269069 cm
+New incident as been detected on : 2019-12-03 11:38:26.364051
+At position 
+This incident as been saved to /home/pi/Desktop/Projet3/Main/videofiles/ as incident_3.h264
+
+A car as been detected at a distance of : 97.981954025 cm
+New incident as been detected on : 2019-12-03 11:38:32.104744
+At position 
+This incident as been saved to /home/pi/Desktop/Projet3/Main/videofiles/ as incident_4.h264
+
+A car as been detected at a distance of : 93.3051782813 cm
+New incident as been detected on : 2019-12-03 11:45:47.056109
+At position 
+This incident as been saved to /home/pi/Desktop/Projet3/Main/videofiles/ as incident_5.h264
+
+A car as been detected at a distance of : 57.7404000665 cm
+New incident as been detected on : 2019-12-03 12:01:43.319899
+At position 
+This incident as been saved to /home/pi/Desktop/Projet3/Main/videofiles/ as incident_6.h264
+
+A car as been detected at a distance of : 65.422327505 cm
+New incident as been detected on : 2019-12-03 12:01:48.514311
+At position 
+This incident as been saved to /home/pi/Desktop/Projet3/Main/videofiles/ as incident_7.h264
+
+A car as been detected at a distance of : 88.9341709977 cm
+New incident as been detected on : 2019-12-03 12:11:37.607706
+At position 
+This incident as been saved to /home/pi/Desktop/Projet3/Main/videofiles/ as incident_8.h264
+
+A car as been detected at a distance of : 78.462611484 cm
+New incident as been detected on : 2019-12-03 12:11:43.337467
+At position 
+This incident as been saved to /home/pi/Desktop/Projet3/Main/videofiles/ as incident_9.h264
+
+A car as been detected at a distance of : 76.2036964718 cm
+New incident as been detected on : 2019-12-03 12:29:51.227416
+At position 
+This incident as been saved to /home/pi/Desktop/Projet3/Main/videofiles/ as incident_10.h264
+
+A car as been detected at a distance of : 79.7395652297 cm
+New incident as been detected on : 2019-12-03 12:30:03.683103
+At position 
+This incident as been saved to /home/pi/Desktop/Projet3/Main/videofiles/ as incident_11.h264
+
+A car as been detected at a distance of : 99.2656427588 cm
+New incident as been detected on : 2019-12-03 12:41:53.090644
+At position 
+This incident as been saved to /home/pi/Desktop/Projet3/Main/videofiles/ as incident_12.h264
+
+A car as been detected at a distance of : 90.3714174605 cm
+New incident as been detected on : 2019-12-03 12:41:59.065218
+At position 
+This incident as been saved to /home/pi/Desktop/Projet3/Main/videofiles/ as incident_13.h264
+
+A car as been detected at a distance of : 97.6142236742 cm
+New incident as been detected on : 2019-12-03 12:42:14.970545
+At position 
+This incident as been saved to /home/pi/Desktop/Projet3/Main/videofiles/ as incident_14.h264
+
+A car as been detected at a distance of : 94.532293115 cm
+New incident as been detected on : 2019-12-03 12:44:44.679690
+At position 
+This incident as been saved to /home/pi/Desktop/Projet3/Main/videofiles/ as incident_15.h264
+
+A car as been detected at a distance of : 59.6948936161 cm
+New incident as been detected on : 2019-12-03 12:52:01.228211
+At position 
+This incident as been saved to /home/pi/Desktop/Projet3/Main/videofiles/ as incident_16.h264
+
+A car as been detected at a distance of : 90.9506264379 cm
+New incident as been detected on : 2019-12-03 12:52:06.644124
+At position 
+This incident as been saved to /home/pi/Desktop/Projet3/Main/videofiles/ as incident_17.h264
+
+A car as been detected at a distance of : 62.7269852633 cm
+New incident as been detected on : 2019-12-03 13:19:28.935392
+At position 
+This incident as been saved to /home/pi/Desktop/Projet3/Main/videofiles/ as incident_18.h264
+
+A car as been detected at a distance of : 40.4853605281 cm
+New incident as been detected on : 2019-12-03 13:38:02.274243
+At position 
+This incident as been saved to /home/pi/Desktop/Projet3/Main/videofiles/ as incident_19.h264
+
+A car as been detected at a distance of : 84.0728565798 cm
+New incident as been detected on : 2019-12-03 13:38:08.603745
+At position 
+This incident as been saved to /home/pi/Desktop/Projet3/Main/videofiles/ as incident_20.h264
+
+A car as been detected at a distance of : 86.260380718 cm
+New incident as been detected on : 2019-12-03 13:38:14.162345
+At position 
+This incident as been saved to /home/pi/Desktop/Projet3/Main/videofiles/ as incident_21.h264
+
+A car as been detected at a distance of : 95.2812237928 cm
+New incident as been detected on : 2019-12-03 13:38:20.435079
+At position 
+This incident as been saved to /home/pi/Desktop/Projet3/Main/videofiles/ as incident_22.h264
+
+A car as been detected at a distance of : 69.5535692118 cm
+New incident as been detected on : 2019-12-03 13:55:10.647623
+At position 
+This incident as been saved to /home/pi/Desktop/Projet3/Main/videofiles/ as incident_23.h264
+
+A car as been detected at a distance of : 69.9778734627 cm
+New incident as been detected on : 2019-12-03 13:55:15.987695
+At position 
+This incident as been saved to /home/pi/Desktop/Projet3/Main/videofiles/ as incident_24.h264
+
+A car as been detected at a distance of : 96.061135416 cm
+New incident as been detected on : 2019-12-03 13:55:21.634700
+At position 
+This incident as been saved to /home/pi/Desktop/Projet3/Main/videofiles/ as incident_25.h264
+
+A car as been detected at a distance of : 79.8634890109 cm
+New incident as been detected on : 2019-12-03 13:55:30.485129
+At position 
+This incident as been saved to /home/pi/Desktop/Projet3/Main/videofiles/ as incident_26.h264
+

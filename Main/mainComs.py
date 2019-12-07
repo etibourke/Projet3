@@ -14,6 +14,13 @@ def getStatus():
     status = status.replace('\n','')
     return status
 
+def sendIncidents():
+    f = open("incidents.txt", "r")
+    message = f.read()
+    f.close
+    print(message)
+    client_sock.send(message)
+
 def sendStatus(incidentNumber):
     f = open("toPhone.txt", "r")
     distance = f.read()
@@ -29,9 +36,15 @@ def statusSent():
     f = open("toPhone.txt", "w")
     f.close
 
-def sendNothing():
-    client_sock.send("Nothing")
-    #print("DUDE")
+def writeGPS():
+    Latitude = client_sock.recv(1024)
+    Longitude = client_sock.recv(1024)
+    Latitude = txtConversion(Latitude)
+    Longitude = txtConversion(Longitude)
+    f = open("gps.txt", "w")
+    f.write(Latitude)
+    f.write(Longitude)
+    f.close
 
 def txtConversion(text):
     text = str(text)
@@ -41,12 +54,13 @@ def txtConversion(text):
 
 def WIFISetup():
     SSID= client_sock.recv(1024)
-    Username= client_sock.recv(1024)
-    Password= client_sock.recv(1024)
+    Username = client_sock.recv(1024)
+    Password = client_sock.recv(1024)
     SSID = txtConversion(SSID)
     Username = txtConversion(Username)
     Password = txtConversion(Password)
-    f = open("/etc/wpa_supplicant/wpa_supplicant.conf", "a")
+    #f = open("/etc/wpa_supplicant/wpa_supplicant.conf", "a")
+    f = open("wifi.txt", "a")
     newWifi = '\nnetwork={\n\tssid=\"' + SSID + '\"\n\tpriority=3\n\t'
     if Username != "true":
         newWifi += 'identity=\"' + Username + '\"\n\t'       
@@ -79,6 +93,13 @@ def Application():
         if data == "StartActivity":
             print ("Activity Start")
             StartActivity()
+        if data == "GPS Position":
+            print ("GPS Position Received")
+            writeGPS()
+        if data == "GetIncidents":
+            print ("Send Incidents")
+            sendIncidents()
+            print ("Incidents Sent")
         if data == "EndActivity":
             print ("Activity Ends")
             StopActivity()
@@ -91,12 +112,11 @@ def Application():
             incidentNumber += 1
             print("Nouveau incident : " + str(incidentNumber))
             sendStatus(incidentNumber)
-            statusSent()
-        #if status != 'Incident':
-            #sendNothing()
-    
+            statusSent()    
 
-#clear files before begining           
+#clear files before begining
+f = open("gps.txt", "w")
+f.close
 f = open("toPhone.txt", "w")
 f.close
 while i==0:
